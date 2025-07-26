@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function HowItWorksSection() {
   const steps = [
     {
@@ -87,9 +89,9 @@ export default function HowItWorksSection() {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <p className="text-gray-600 mb-6">Ready to get started?</p>
-          <button className="btn-primary text-lg px-8 py-4">
+          <Link href="/register" className="btn-primary text-lg px-8 py-4 inline-block">
             Join Our Community
-          </button>
+          </Link>
         </div>
       </div>
     </section>

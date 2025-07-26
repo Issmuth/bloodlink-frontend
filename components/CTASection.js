@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function CTASection() {
   return (
     <section className="py-20 bg-gradient-to-r from-crimson to-red-600 relative overflow-hidden">
@@ -53,9 +55,9 @@ export default function CTASection() {
 
         {/* Main CTA Button */}
         <div className="mb-8">
-          <button className="bg-white text-crimson text-xl font-bold px-12 py-6 rounded-full hover:bg-gray-100 transition-colors duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-transform">
+          <Link href="/register" className="bg-white text-crimson text-xl font-bold px-12 py-6 rounded-full hover:bg-gray-100 transition-colors duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-transform inline-block">
             Become a Lifesaver Today
-          </button>
+          </Link>
         </div>
 
         {/* Secondary Info */}

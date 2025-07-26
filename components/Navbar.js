@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Link from 'next/link'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -30,12 +31,12 @@ export default function Navbar() {
               <a href="#get-involved" className="text-midnight hover:text-crimson px-3 py-2 text-sm font-medium transition-colors">
                 Get Involved
               </a>
-              <a href="#login" className="text-midnight hover:text-crimson px-3 py-2 text-sm font-medium transition-colors">
+              <Link href="/login" className="text-midnight hover:text-crimson px-3 py-2 text-sm font-medium transition-colors">
                 Login
-              </a>
-              <button className="btn-primary">
+              </Link>
+              <Link href="/register" className="btn-primary inline-block text-center">
                 Register
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -66,13 +67,13 @@ export default function Navbar() {
             <a href="#get-involved" className="text-midnight hover:text-crimson block px-3 py-2 text-base font-medium">
               Get Involved
             </a>
-            <a href="#login" className="text-midnight hover:text-crimson block px-3 py-2 text-base font-medium">
+            <Link href="/login" className="text-midnight hover:text-crimson block px-3 py-2 text-base font-medium">
               Login
-            </a>
+            </Link>
             <div className="px-3 py-2">
-              <button className="btn-primary w-full">
+              <Link href="/register" className="btn-primary w-full inline-block text-center">
                 Register
-              </button>
+              </Link>
             </div>
           </div>
         </div>

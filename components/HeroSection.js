@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function HeroSection() {
   return (
     <section id="home" className="bg-gradient-to-br from-off-white to-gray-50 py-20 lg:py-32">
@@ -16,12 +18,12 @@ export default function HeroSection() {
             
             {/* CTA Buttons */}
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <button className="btn-primary text-lg px-8 py-4">
+              <Link href="/register" className="btn-primary text-lg px-8 py-4 inline-block text-center">
                 Register as Donor
-              </button>
-              <button className="btn-secondary text-lg px-8 py-4">
+              </Link>
+              <Link href="/register" className="btn-secondary text-lg px-8 py-4 inline-block text-center">
                 Request Blood
-              </button>
+              </Link>
             </div>
 
             {/* Trust Indicators */}

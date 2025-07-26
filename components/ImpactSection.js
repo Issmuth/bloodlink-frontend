@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function ImpactSection() {
   const stats = [
     {
@@ -112,12 +114,12 @@ export default function ImpactSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-primary text-lg px-8 py-4">
+              <Link href="/register" className="btn-primary text-lg px-8 py-4 inline-block text-center">
                 Start Donating Today
-              </button>
-              <button className="border-2 border-teal-green text-teal-green px-8 py-3 rounded-full font-medium hover:bg-teal-green hover:text-white transition-colors duration-300">
+              </Link>
+              <Link href="/#how-it-works" className="border-2 border-teal-green text-teal-green px-8 py-3 rounded-full font-medium hover:bg-teal-green hover:text-white transition-colors duration-300 inline-block text-center">
                 Learn More
-              </button>
+              </Link>
             </div>
           </div>
         </div>
